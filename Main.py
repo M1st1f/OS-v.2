@@ -15,19 +15,32 @@ choose = int(input(">>> "))
 #
 #Call programs
 #
-# TODO: loop program util choose is == 4
-if(choose == 1):
-    cleaning()
-    Callculator()
-    # TODO: how do I call back?
-elif(choose == 2):
-    # TODO: Create a freaking Diary, How?
-    cleaning()
-    diary_entry()
-elif(choose == 3):
-    ## TODO: Had already make this, just copy and paste
-    cleaning()
-elif(choose == 4):
-    SystemExit
-else:
-    print("invalid text")
+def infinty_util_death():
+    while True:
+        # TODO: loop program util choose is == 4
+        if(choose == 1):
+            cleaning()
+            Callculator()
+            return True
+            infinty_util_death()
+            # TODO: how do I call back?
+        elif(choose == 2):
+            # TODO: Create a freaking Diary, How?
+            cleaning()
+            diary_entry()
+            infinty_util_death()
+            return True
+        elif(choose == 3):
+            ## TODO: Had already make this, just copy and paste
+            cleaning()
+            infinty_util_death()
+            return True
+        elif(choose == 4):
+            return False
+            SystemExit
+        else:
+            print("invalid text")
+            infinty_util_death()
+            return True
+
+infinty_util_death()
