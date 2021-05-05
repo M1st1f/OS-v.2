@@ -18,17 +18,16 @@ choose = int(input(">>> "))
 def infinty_util_death():
     while True:
         # TODO: loop program util choose is == 4
+        #Problems? : loop kinda working, what I am doing worng??
         if(choose == 1):
             cleaning()
             Callculator()
             return True
-            infinty_util_death()
             # TODO: how do I call back?
         elif(choose == 2):
             # TODO: Create a freaking Diary, How?
             cleaning()
             diary_entry()
-            infinty_util_death()
             return True
         elif(choose == 3):
             ## TODO: Had already make this, just copy and paste
